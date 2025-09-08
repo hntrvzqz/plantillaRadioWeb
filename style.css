@@ -1,0 +1,202 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #8c49b8;
+    background: linear-gradient(115deg, rgba(140, 73, 184, 1) 4%, rgba(0, 0, 0, 0.96) 50%, rgba(69, 157, 252, 1) 94%);
+}
+
+.nav-link, .dropdown-item {
+    color: white;
+}
+
+
+
+h2 {
+    color: white;
+    font-size: x-large;
+    padding: 5vh;
+}
+
+/* maneja el titulo de la radio y sus programas*/
+p.titulo1 {
+    color: white;
+    font-size: 5vh;
+}
+
+/* esto da forma y efectos a la parrilla de la radio**/
+
+#gridRadio {
+    color: rgb(189, 181, 181);
+    font-size: large;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#gridRadio div :hover {
+    color: white;
+    font-weight: 600;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+
+/* estos estilos dan forma tamaño y efectos a los titulos de los anunciantes**/
+
+div#toggle {
+    transform: none;
+    transition: none;
+}
+
+p.anuncianteTitulo, p.h2{
+    color: rgb(189, 181, 181);
+    font-weight: bold;
+    text-align: center;
+    padding: 2px;
+}
+
+p.anuncianteTitulo,p.h2.contacto:hover{
+    color: white;
+    font-weight: 700;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+
+/* estos estilos dan forma tamaño y efectos a los logos de los anunciantes**/
+
+.rounded-circle{
+  width: 120px;
+  height: 120px;
+  margin: 2px;
+  margin-top: 3px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.rounded-circle:hover {
+    background-color: white;
+    transform: scale(1.06);
+    transition: all 0.3s ease;
+}
+
+.imagenNosotros{
+    width: 50vh;
+    height: 50vh;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* comportamiento de los toggle*/
+div.container.text-center {
+    display: flex;
+}
+
+div.container.toggle {
+    width: 30vh;
+    height: 60vh;
+    align-items: right;
+}
+
+img.logoToggle {
+    width: 30vh;
+    height: 30vh;
+}
+
+
+div.row.text-center {
+    justify-content: center;
+}
+
+div#toggle1 {
+    display: none;
+}
+
+img.toggle {
+    width: 70vh;
+    height: 70vh;
+    margin-top: 5px;
+    margin-bottom: 2vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+img.rounded-circle.botoncitoProductor{
+    width: 8vh;
+    height: 8vh;
+    padding: 0.5vh;
+    margin: 0;
+    justify-content: center;
+    align-items: stretch;
+}
+
+
+.imagenNosotros:hover {
+    transform: scale(1.06);
+    transition: all 0.3s ease;
+}
+
+.textoNosotros {
+    color: white;
+    font-weight: 500;
+    text-align: justify;
+   
+}
+
+/*esto da comportamiewnto a los textos.*/
+#hola {
+    opacity: 0;
+}
+
+#hola:hover {
+    opacity: 1;
+    transition: all 0.8s ease-out;
+    transition: all 0.5s ease;
+}
+
+.d-block {
+    height: 50vh;
+}
+
+label.form-label {
+    color: white;
+    font-size: medium;
+}
+
+section.elFooter {
+    background-color: rgba(102, 3, 102, 0.555);
+    margin-top: 8vh;
+    padding-top: 2vh;
+}
+
+/*este media asigna el tamaño de los logos en movil*/
+@media (max-width: 540px) {
+    .rounded-circle {
+    width: 90px;
+    height: 90px;
+    margin: 1px;
+}
+}
+/* este media oculta el nombre de los patrocinantes cuando esta en version movil*/
+@media (max-width: 540px) {
+    p.anuncianteTitulo {
+        display: none;
+}
+    img.toggle {
+        width: 45vh;
+        height: 60vh;
+    }
+    img.logoToggle {
+        width: 20vh;
+        height: 20vh;
+}
+}
+/* esta media es para el comportamiento movil del carrusel*/
+@media (min-width: 768px) {
+    .d-block {
+    height: 120vh;
+
+}
+}

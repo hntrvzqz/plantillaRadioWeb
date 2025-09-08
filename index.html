@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
+    <title>RADIOSDEBARINAS.COM</title>
+</head>
+<body>
+<!--SECCION 1 = aqui va el navbar, falta por integrar los icons que agreguen estilo a la pagina-->
+<!-- TO-DO: ESTILIZAR EL BOTLON Y PROCURAR FUNCIONALIDADES, INTEGRAR LOS ICONS QUE VAMOS A USAR EN LA PAGINA-->
+<nav class="navbar navbar-expand-lg bg-opacity-10 bg-dark ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="./img/metroLogoSF.png" alt="Bootstrap" width="80">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" text-success aria-current="page" href="#">Anunciantes 📣 </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nosotros 📻</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Mas ✚
+          </a>
+          <ul class="dropdown-menu bg-light bg-opacity-10">
+            <li><a class="dropdown-item" href="#">Programas 🗓️</a></li>
+            <li><a class="dropdown-item" href="#">Productores 👥</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Contactanos 🤝 </a></li>
+          </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--SECCION 2 = EL BOTON DE AUDIO PARA LA EMISORA VIA WEB,-->
+<!--TO-DO: ya esta integrado el boton de audio, pero quiero estilizarlo para que se vea mas atractivo al usuario y ofrezca una mejor experiencia, ya q ese boton por defecto no se reproduce en los xiaomi y en otros equipos, la respuesta a esto es integrar el react-player. que se ve bastante bien.-->
+<div class="row bg-dark">
+<audio controls autoplay > BOTON
+  <source src="./MUSIC/JORGE GUERRERO - AQUI HAY GUERRERO PA RATO.mp3">
+</audio>
+</div>
+ <!-- SECCION 3.1 = aqui va el carrousel o el hero que identifique la marca-->
+    <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/radio1.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./img/radio2.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./img/radio3.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+ <!-- SECCION 3.2 = aqui van los logos de los patrocinantes-->
+<!-- TO-DO: revisar la presentacion definitiva de los logos de los patrocinantes. mirar si no es muy complejo agregar una animacion en bucle.creo q sera con javascript-->
+
+<div class="container-fluid">
+  <div class="row text-center">
+  <div class="col col-lg-1"><img class="rounded-circle" src="./img/logoPatrocinantes/logoHeinz.jpg"><p class="anuncianteTitulo">yo soy anunciante</p></div>
+  <div class="col col-lg-1"><img class="rounded-circle" src="./img/logoPatrocinantes/logoSuCafe.jpeg"><p class="anuncianteTitulo">yo soy anunciante</p></div>
+  <div class="col col-lg-1"><img class="rounded-circle" src="./img/logoPatrocinantes/logoGalletaItalia.png"><p class="anuncianteTitulo">yo soy anunciante</p></div>
+  <div class="col col-lg-1"><img class="rounded-circle" src="./img/logoPatrocinantes/logoSun.jpeg"><p class="anuncianteTitulo">yo soy anunciante</p></div>
+  <div class="col col-lg-1"><img class="rounded-circle" src="./img/logoPatrocinantes/logoTokio.jpg"><p class="anuncianteTitulo">yo soy anunciante</p></div>
+  <div class="col col-lg-1"><img class="rounded-circle" src="./img/logoPatrocinantes/logoEjemplo1.png"><p class="anuncianteTitulo">yo soy anunciante</p></div>
+  <div class="col col-lg-1"><img class="rounded-circle" src="./img/logoPatrocinantes/logoSun.jpeg"><p class="anuncianteTitulo">yo soy anunciante</p></div>
+  <div class="col col-lg-1"><img class="rounded-circle" src="./img/logoPatrocinantes/logoTokio.jpg"><p class="anuncianteTitulo">yo soy anunciante</p></div>
+  <div class="col col-lg-1"><img class="rounded-circle" src="./img/logoPatrocinantes/logoEjemplo1.png"><p class="anuncianteTitulo">yo soy anunciante</p></div>
+  <div class="col col-lg-1"><img class="rounded-circle" src="./img/logoPatrocinantes/logoSun.jpeg"><p class="anuncianteTitulo">yo soy anunciante</p></div>
+  <div class="col col-lg-1"><img class="rounded-circle" src="./img/logoPatrocinantes/logoTokio.jpg"><p class="anuncianteTitulo">yo soy anunciante</p></div>
+  <div class="col col-lg-1"><img class="rounded-circle" src="./img/logoPatrocinantes/logoEjemplo1.png"><p class="anuncianteTitulo">yo soy anunciante</p></div>
+</div>
+</div>
+
+<!--SECCION 4 = AQUI VA LA PARRILLA O PROGRAMACION DE LA EMISORA ESTO ESTA COMPLETADO. -->
+<!-- OBSERVACIONES, ESTA SECCION 6, LA ELIMINAMOS Y VAMOS A CREAR TOOGLE, QUE ES EL TERMINO PARA QUE APARESCAN UNA VEZ UTILICEN EL BOTON. = GALERIA DE IMAGENES, AQUI VAMOS A COLOCAR IMAGENES DISEÑADAS PARA PRESENTAR LOS PRODUCTORES Y LOS PROGRAMAS DE LA RADIO: OK, ESTAMOS LISTOS, FALTA INTEGRAR LA IMAGEN DE MANERA RESPONSIVE,  QUE APARESCA CUANDO DAMOS CLICK O TAP EN EL ICONO DEL PRODUCTOR, ESO ES USANDO LA PROPIEDAD DISPLAY: NONE DE CSS PERO ACCIONADO CON JAVASCRIPT-->
+<h2 class="text-center m-2"><p class="titulo1">La Radio</br>y sus Programas</p></h2>
+<div id="mostrarImagen" class="container">
+ <div id="gridRadio" class="grid">
+    <div class="row">
+    <div id="contenedorJoropo" class="col bg-light m-1 bg-opacity-10 rounded-4 p-3">programa 1 <p class="h2">JOROPO <br> ALBERTO ALI TERAN <br> <p class="h6"><em>Lun a Vie</em><br/>6:00AM - 8:00 AM</p></p><button id="botonJoropo" class="button btn btn-secondary">Mostrar</button></div>
+    <!--ojo este es el primer toggle que estoy construyendo OJO OJO -->
+    <div id="toggle1" class="toggle col-lg-12 col-sm-12 border border-info rounded-4 m-0 p-0"><p>toggle1</p><div class="container text-center m-0 p-0">
+      <!--AQUI VAMOS A CREAR EL FLEXBOX QUE VA A CONTENER FOTO, LOGO, TITULO PROGRAMA, RESEÑA-->
+      <div class="d-flex">
+        <div style="background-color: aqua;">1</div>
+        <div class="col">
+        <div style="background-color: blueviolet;">2</div>
+        <div style="background-color: brown;">3</div>
+        <div class="row" style="background-color: burlywood;">4</div>    
+        </div>
+      </div>
+      <!-- intente hacer un progreso con la imagen pero no me salio bien, voy a regresar al intento inicial-->
+
+    </div>
+    <div class="row text-center">
+    <img class="rounded-circle text-center" src="./img/logoPatrocinantes/logowhatsapp2.jpg">
+    <img class="rounded-circle text-center" src="./img/logoPatrocinantes/logoinstagram2.jpg">
+    <img class="rounded-circle text-center" src="./img/logoPatrocinantes/logoface.jpg">
+    <img class="rounded-circle text-center" src="./img/logoPatrocinantes/logoCerrar.png">
+    </div>
+    </div>
+    <div class="col bg-light m-1 bg-opacity-10 rounded-4 p-3">programa 2 <p class="h2">EL GUAYOYO <br> FRANCISCO SANCHEZ <br> <p class="h6"><em>Lun a Vie</em><br/>8:00AM - 10:00AM</p></p>
+          <div class="row text-center">
+          <img class="rounded-circle botoncitoProductor" src="./img/logoPatrocinantes/logowhatsapp2.jpg">
+          <img class="rounded-circle botoncitoProductor" src="./img/logoPatrocinantes/logoinstagram2.jpg">
+          <img class="rounded-circle botoncitoProductor" src="./img/logoPatrocinantes/logoface.jpg">
+          <img class="rounded-circle botoncitoProductor" src="./img/logoPatrocinantes/logoCerrar.png">
+        </div>
+    </div>
+        <div class="col bg-light m-1 bg-opacity-10 rounded-4 p-3">programa 3 <p class="h2">CONEXION VITAL <br> MARIELA ARRIETA <br> <p class="h6"><em>Lun a Vie</em><br/>10:00AM - 11:00AM</p></p></div>
+  </div>
+    <div class="row">
+    <div class="col bg-light m-1 bg-opacity-10 rounded-4 p-3 " >programa 4 <p class="h3">LA MEGA TIENDA DEL COLCHON <br> DORMIR BIEN <br> <p class="h5"><em>Lun a Vie</em><br/>11:00AM - 12:00M </p></p></div>
+    </div>
+    <div class="row">
+    <div class="col bg-light m-1 bg-opacity-10 rounded-4 p-3">programa 5 <p class="h1">90 MINUTOS <br> CARLOS VARGAS <br> <p class="h6"><em>Lun a Vie</em><br/>12:00M - 1:00PM</p></p></div>
+    <div class="col bg-light m-1 bg-opacity-10 rounded-4 p-3">programa 6 <p class="h2">POR ESTE LLANO INFINITO <br/> RAMON EMILIO FLORES  <p class="h6"><em>Lun a Vie</em><br/>2:00PM - 4:00PM</p></p></div>
+    </div>
+    <div class="row">
+    <div class="col bg-light m-1 bg-opacity-10 rounded-4 p-3">programa 7 <p class="h2"> ESCAPATE CONMIGO <br> IRLANDA GUTIERREZ <br> <p class="h6"><em>Lun a Vie</em><br/>4:00PM - 6:00PM</p></p></div>
+    <div class="col bg-light m-1 bg-opacity-10 rounded-4 p-3">programa 8 <p class="h2">ROMANCES Y RECUERDOS <br> CUAULO URBANO <br> <p class="h6"><em>Lun a Vie</em><br/>6:00PM - 8:00PM</p></p></div>
+    </div>
+    <div class="row">
+    <div class="col bg-light m-1 bg-opacity-10 rounded-4 p-3">programa 9 <p class="h2"> EL GAITERAZO <br> FREDDY GONZALES Y JESUS ROJAS <br> <p class="h6"><em>Sab y Dom</em><br/>10:00AM- 12:00M</p></p></div>      
+    <div class="col bg-light m-1 bg-opacity-10 rounded-4 p-3">programa 10 <p class="h2"> LOS PASOS DEL CAMINANTE <br> RAFAEL REYES <br> <p class="h6"><em>Sab y Dom</em><br/>12:00M - 2:00PM</p></p></div>
+    <div class="col bg-light m-1 bg-opacity-10 rounded-4 p-3">programa 11 <p class="h2">LA TIZANA<br> FRANCISCO VAZQUEZ <br> <p class="h6"><em>Sab y Dom</em><br/>2:00PM - 4:00PM</p></p></div>
+    </div>
+</div>  
+</div>
+
+<!-- SECCION 5 = QUIENES SOMOS, AQUI VA LA MISION Y VISION DE NUESTRA ORGANIZACION -->
+ <!--TO-DO: QUIERO AGREGAR LA ENTRADA DE EL TEXTO MIENTRAS EL USUARIO HACE SCROLL, CREO Q SERA CON JAVASCRIPT-->
+<div  class="container">
+  <div class="row text-center">
+    <div class="col-lg-6 col-sm-12"><img class="imagenNosotros rounded-4 h" src="./img/radio1.jpeg" alt=""></div>
+    <div id="hola" class="col-lg-6 col-sm-12 p-3"><p class="h4 textoNosotros">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum impedit fugiat, alias animi laudantium inventore, blanditiis quis corporis harum dolorum incidunt esse a dolor voluptas enim! Voluptatem nostrum dicta hic. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel facilis laboriosam minus consectetur deleniti officiis unde! Rem sed voluptatum nostrum dolores, nisi, modi natus minima hic tenetur quae quisquam commodi?</p></div>
+</div>
+</div>
+
+
+
+<!-- SECCION 7 = ESTE ES EL FOOTER: FORMULARIO DE CONTACTO, AQUI VAN A IR TODAS LAS VIAS QUE TENGAMOS PARA QUE NUESTROS CLIENTES VEAN LA MANERA DE CONTACTARNOS, UN FORMULARIO DE CONTACTO, BOTONES DE NUESTRAS REDES SOCIALES, Y TELEFONO DE CONTACTO. TAMBIEN EL CONTACTO PARA QUE DEN CON EL DESARROLLADOR -->
+
+<section class="elFooter">
+<div class="container footer">
+
+  <div class="row">
+<div class="col-lg-6 col-sm-12"> 
+    <div class="text-center"><p class="h2 contacto">Formulario de Contacto</p></div>
+<div class="container mt-3">
+  <form action="send-email.php" method="post">
+  <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Nombre y apellido </label>
+  <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Dinos Tu Nombre Por Favor" name="name" required>
+  </div>
+  <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Numero telefonico</label>
+  <input type="phone" class="form-control" id="exampleFormControlInput1" placeholder="Danos tu numero telefonico" name="phone" required>
+  </div>
+  <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Cual es tu Correo Electronico" name="email" required>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">En Que Podemos Ayudarte?</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribenos" name="mensaje" required></textarea>
+  <button type="submit" class="btn btn-outline-light mb-3 mt-2 p-2">send</button>
+  </form>
+</div>
+</div>
+</div>
+
+
+<!-- este es el footer-->
+<div class="col-lg-6 col-sm-12">
+<div class="row text-center"><p class="h2 contacto">Contactanos</p></div>
+<div class="row">
+  <div class="col col-lg-4 text-center mb-3"><img class="rounded-circle" src="./img/logoPatrocinantes/logowhatsapp2.jpg"></div>
+  <div class="col col-lg-4 text-center mb-3"><img class="rounded-circle" src="./img/logoPatrocinantes/logoface.jpg"></div>
+  <div class="col col-lg-4 text-center mb-3"><img class="rounded-circle" src="./img/logoPatrocinantes/logoinstagram2.jpg"></div>
+  </div>
+ </div>
+ </div>
+</div>
+</section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="./comportamiento.js"></script>
+</body>
+</html>
