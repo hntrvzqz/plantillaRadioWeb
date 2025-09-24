@@ -12,7 +12,7 @@ function botoncito() {
 boton.addEventListener('click', botoncito)
 */
 
-
+// esta funcion trabaja el comportamiento de los toogle.
 
 const boton = document.getElementById('botonJoropo');
 const contenedorToggle = document.getElementById('toggle1');
@@ -36,3 +36,5 @@ contenedorToggle.addEventListener('click', alternarContenedor)
  * 
  * hay q tomar los iconos que funcionaran como botones y sacarlos de los estilos generales de la pagina, para adecuar, tamaño a gusto, tambien vamos a colocar los botones dentro del toggle, porque por fuera se ven muy desagradables.
  */
+
+/** hay que implementar una funcion que haga que se mueva el cliente por el sitio. al final del archivo html un button o un link que haga subir al cliente a la parte de arriba */
